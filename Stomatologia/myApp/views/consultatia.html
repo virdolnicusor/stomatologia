@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous"
+  />
+    <title>Stomatologie</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="?page=bunvenit">
+            <img src="myApp/img/logoo.png" alt="missing logo!" width="45" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="?page=bunvenit">Bun Venit</a>
+              <a class="nav-link" aria-current="page" href="?page=stomatologie">Despre Stomatologie</a>
+              <a class="nav-link" href="?page=consultatie">Consultatia Stomatologica</a>
+              <a class="nav-link" href="?page=intrebari">Intrebari frecvente</a>
+            </div>
+            <a href="?page=logout" class="ms-auto">Logout</a>
+  
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login form</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="login.php">
+                <div class="mb-3">
+                  <label for="exampleInputUserName" class="form-label"
+                    >User name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputUserName"
+                    name="userName"
+                    aria-describedby="emailHelp"
+                  />
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Password:</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    name="userPass"
+                  />
+                </div>
+              
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mt-2">
+    <h3 class="text-center">Ce presupune o consultație stomatologică?</h3>
+    <p class="pt-2" >Primul pas pe care trebuie să îl faci pentru a-ți rezolva problemele dentare este să programezi o consultație stomatologică. Indiferent de afecțiunea cu care te confrunți, consultația inițială realizată de către medicul dentist îți va asigura un diagnostic corect și un plan de tratament potrivit. Fie că este vorba de un control de rutină, fie că ai nevoie de ajutor pentru a trata ceva specific, este necesar să treci printr-un consult medical. În funcție de specialitate, fiecare consult are anumite caracteristici și etape.</p>
+    <h3 class="text-center">Ce se întâmplă în timpul consultației stomatologice?</h3>
+    <p class="pt-2">În primul rând, este necesar să știi că o consultație stomatologică înseamnă o evaluare a stării de sănătate orală. Astfel, în funcție de fiecare caz în parte, medicul dentist pune un diagnostic pentru problemele orale identificate și recomandă un plan de tratament personalizat. Așadar, consultația stomatologică are un rol foarte important în ceea ce privește rezolvarea problemei orale, deoarece atunci când aceasta nu este tratată cu seriozitate poate duce la realizarea unui tratament incorect. O consultație stomatologică constă în 2 etape extrem de importante pentru stabilirea diagnosticului. Aceste etape sunt: radiografia dentară & anamneza. Pentru o consultație stomatologică inițială, de cele mai multe ori, medicul recomandă o radiografie panoramică, deoarece permite examinarea tuturor dinților fiind, de fapt, o imagine de ansamblu a întregii cavități orale. Anamneza reprezintă o discuție între medic și pacient și are rolul înțelegerii motivelor exacte ale vizitei. Această discuție cu medicul stomatolog are și rolul de a te ajuta să te relaxezi și să te simți cât mai confortabil. Astfel, la începutul consultației vei putea fi întrebat despre mai multe lucruri precum: date personale, date despre sănătatea generală, date despre istoricul stomatologic și date despre motivul vizitei.
+        <div class="text-center">
+               <img src="myapp/img/radiografie.png" width="800px" alt="lipsa poza">
+      </div>
+      <h3 class="text-center pt-2"> Examenul clinic</h3>
+      <p class="pt-2">Odată ce medicul stomatolog știe care sunt problemele care te-au adus în cabinetul de medicină dentară și a examinat o radiografie panormică, acesta poate să realizeze examinarea efectivă a cavității orale, cu accent pe zona care trebuie tratată, mai ales tumefierile, sângerările, abcesele etc. De asemenea, medicul va examina toți dinții, igiena orală, gradul de mobilitate a dinților, dacă este cazul, sănătatea gingiei și a mucoasei bucale. În funcție de complexitatea cazului și de dorințele pacientului, împreună cu medicul stomatolog se stabilește strategia terapeutică. În cadrul consultației vei primi toate informațiile referitoare la: etapele tratamentului, durata acestuia și costul total al planului de tratament recomandat.</p>
+      <h3 class="text-center pt-2"> Investigații pe care medicul dentist le poate solicita după consult</h3>
+      <p class="pt-2">După o consultație stomatologică medicul dentist îți recomandă un plan de tratament personalizat. În funcție de fiecare caz în parte, este posibil să ți se recomande să realizezi și alte investigații. De exemplu, dacă medicul stomatolog descoperit că te confrunți cu o carie interdentară, îți poate cere să realizezi o radiografie retroalveolară. Aceasta este acel timp de investigație imagistică care oferă medicului o imagine detaliată asupra unui dinte. Astfel, ea permite analizarea tuturor structurilor unui dinte, de la coroana dentară, până la rădăcină și la osul în care este ancorat.</p>
+      <div class="text-center">
+        <img src="myapp/img/consultatie.jpg" width="800px" alt="lipsa poza">
+        </div>
+     <h3 class="text-center pt-2">Cât de des trebuie să mergi la dentist pentru control, chiar dacă nu ai probleme cu dinții</h3>
+     <p class="pt-2">Vizitele regulate la medicul stomatolog sunt recomandate de cel puțin 2 ori pe an, odată la 6 luni, fie că te confrunți cu probleme dentare, fie că nu. O consultație stomatologică realizată la timp te poate ajuta să depistezi din timp anumite afecțiuni dentare. Tratarea incipientă a afecțiunilor dentare este o metodă foarte bună prin care poți evita disconfortul creat de afecțiunile dentare, de costurile ridicate ale tratamentelor necesare complicațiilor stomatologice și de timpul mai îndelungat al realizării tratamentului. De exemplu, o consultație stomatologică realizată la timp te poate ajuta să descoperi o carie dentară în stadiu incipient, care afectează doar smalțul dintelui și care nu îți provoacă durere sau disconfort. Tratamentul necesar acestui tip de carie este unul mult mai simplu, mai puțin costisitor și mai rapid decât acela necesar tratării unei carii care a ajuns la nervul dintelui și a provocat a infecția pulpei dentare.</p>
+
+     </div>
+    </div>
+     <footer class="mt-2">
+        <div class="container-fluid bg-dark text-white d-flex justify-content-around pt-2">
+            <div class="col-2" > 
+                       <p>Viata e scurta! </p>
+                       <p>Zambeste cat inca mai ai dinti!</p>
+            </div>
+            <div class="col-2" >   
+              <p>Contact</p>
+              <p>Virdol Nicusor Adrian</p>
+              <p>virdolnicusor@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

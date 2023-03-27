@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="myApp/stil.css">
+    <script async defer src="myApp/signup.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="myApp/img/logoo.png" alt="missing logo!" width="45" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="?page=stomatologie">Despre Stomatologie</a>
+            <a class="nav-link" href="?page=consultatie">Consultatia Stomatologica</a>
+            <a class="nav-link" href="?page=intrebari">Intrebari frecvente</a>
+          </div>
+          <!-- Button trigger modal LOGIN -->
+          <button
+            type="button"
+            class="btn btn-primary ms-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            id="loginButton"
+          >
+            Login
+          </button>
+          <!-- Button trigger modal SIGN-UP -->
+          <button
+            type="button"
+            class="btn btn-primary ms-4"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalSignup"
+            id="signupButton"
+          >
+            Sign-up
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal LOGIN -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form method="POST" action="?page=login">
+              <div class="mb-3">
+                <label for="exampleInputUserName" class="form-label"
+                  >User name:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputUserName"
+                  name="userName"
+                  aria-describedby="emailHelp"
+                />
+                
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password:</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  name="userPass"
+                />
+              </div>
+            
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal SIGN_UP -->
+    <div
+      class="modal fade"
+      id="exampleModalSignup"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">SIGN-UP form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="signUpForm" method="POST" action="?page=signup">
+              <div class="mb-3">
+                <label for="exampleInputUserName" class="form-label"
+                  >User name:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputSignUpName"
+                  name="signUpName"
+                  aria-describedby="emailHelp"
+                />
+                
+              </div>
+              <div class="mb-3">
+                <label for="signUpPass1" class="form-label"
+                  >Password:</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="signUpPass1"
+                  name="signUpPass1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="signUpPass2" class="form-label"
+                  >Re-type password:</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="signUpPass2"
+                  name="signUpPass2"
+                />
+              </div>
+            
+              <button type="submit" class="btn btn-primary">Sign-up</button>
+            </form>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="myApp/img/banner1.jpg"
+            class="d-block w-100"
+            alt="missing banner!"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="myApp/img/banner2.jpg"
+            class="d-block w-100"
+            alt="missing banner!"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="myApp/img/banner3.jpg"
+            class="d-block w-100"
+            alt="missing banner!"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="row mt-5">
+        {{mainContent}}
+    
+    </div>
+    </div>
+
+    <footer class="mt-2">
+      <div class="container-fluid bg-dark text-white d-flex justify-content-around pt-2">
+          <div class="col-2" > 
+                     <p>Viata e scurta! </p>
+                     <p>Zambeste cat inca mai ai dinti!</p>
+          </div>
+          <div class="col-2" >   
+            <p>Contact</p>
+            <p>Virdol Nicusor Adrian</p>
+            <p>virdolnicusor@gmail.com</p>
+          </div>
+      </div>
+  </footer>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

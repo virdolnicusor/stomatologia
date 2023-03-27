@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous"
+  />
+    <title>Intrebari</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="?page=bunvenit">
+            <img src="myApp/img/logoo.png" alt="missing logo!" width="45" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="?page=bunvenit">Bun Venit</a>
+              <a class="nav-link" aria-current="page" href="?page=stomatologie">Despre Stomatologie</a>
+              <a class="nav-link" href="?page=consultatie">Consultatia Stomatologica</a>
+              <a class="nav-link" href="?page=intrebari">Intrebari frecvente</a>
+            </div>
+            <a href="?page=logout" class="ms-auto">Logout</a>
+  
+          </div>
+        </div>
+      </nav>
+  
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login form</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="login.php">
+                <div class="mb-3">
+                  <label for="exampleInputUserName" class="form-label"
+                    >User name:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputUserName"
+                    name="userName"
+                    aria-describedby="emailHelp"
+                  />
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Password:</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    name="userPass"
+                  />
+                </div>
+              
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      <h1 class="text-center">Intrebari frecvente</h1>
+      <h2 class="text-center pb-3">Intrebari si raspunsuri despre problemele si tratamentele stomatologice</h2>
+      <div class="container">
+        <div class="row mt-2">
+          <main class="col-8 border-end">
+        <h3 class="pt-2">1. Cum pot preveni problemele dentare la copii? </h3>
+        <p>Ingrijirea trebuie sa inceapa imediat dupa nastere. Dupa hranire, curatati gingiile copilului cu o compresa curata si uscata (se gasesc in farmacii). Dupa eruptia dintilor – chiar si 4 luni dupa nastere – acestia vor fi periati zilnic cu o periuta moale si pasta de dinti cu fluor. Se va folosi o cantitate mica de dimensiunea unui bob de mazare pentru a evita riscul inghitirii. De asemenea dintii se pot sigila cu materiale speciale chiar de la varste fragede pentru a proteja zonele cele mai vulnerabile la atac carios de pe suprafata dentara.</p>
+        <h3 class="pt-2">2. Cand ar trebui sa fie prima vizita la stomatolog?</h3>
+        <p>Prima vizita ar trebui sa aiba loc in jurul varstei de 6-12 luni. Uneori se poate si mai devreme pentru ca exista patologie orala si fara sa fie prezenti dintii in cavitatea orala. Mergeti cu copilul la medicul stomatolog cel putin de 2 ori pe an!</p>
+        <h3 class="pt-2">3. Care sunt primele semne ale bolii parodontale?</h3>
+        <p>Primul semn al instalarii bolii parodontale este singerarea gingivala, care apare la cea mai usoara atingere a gingiei cu periuta de dinti. In formele mai avansate de boala parodontala, gingia incepe sa se retraga de pe dinti, iar acestia devin mobili. Uneori pot aparea pungi de puroi la nivelul acestor dinti, iar daca tratamentul nu este instituit rapid se poate ajunge la piederea dintilor.</p>
+        <h3 class="pt-2">4. Se trateaza dintii temporari desi se schimba?</h3>
+        <p>Sintagma conform careia dintii temporari nu se trateaza pentru ca oricum se schimba nu este doar falsa ci reprezinta si punctul de plecare pentru toate afectiunile dentare si deseori generale ale copilului. DA, dintii temporari trebuie si merita sa fie fie tratati! Astazi exista materiale de obturatie (plombe) mult mai atractive pentru copil.</p>
+        <h3 class="pt-2">5. Femeile insarcinate pot fi tratate?</h3>
+        <p>Femeile insarcinate pot beneficia de tratamente stomatologice. Este totusi de preferat evitarea tratamentelor stomatologice invazive in primul si in ultimul trimestru de sarcina.</p>
+        <h3 class="pt-2">6. Care sunt semnele care arata ca ar fi nevoie de tratament ortodontic?</h3>
+        <p>Printre semnele care sugereaza inceperea unui tratament ortodontic mentionam: inghesuiri ale dintilor, spatieri ale acestora, dureri si dificultati la masticatie, imposibilitatea inciziei (cum ar fi de exemplu ruperea unui fir de ata cu incisivii), neaparitia unui dinte definitiv pe arcada, lipsa unor dinti permanenti de pe arcada, extractii vechi care au dus la inclinarea dintilor limitrofi si altele.</p>
+        <h3 class="pt-2">7. Cand se incepe tratamentul ortodontic?</h3>
+        <p>In general, tratamentul ortodontic se incepe in copilarie, in jurul varstei de sapte ani, sau cand copilul mai are doar 4 – 6 dinti de lapte. In aceasta faza a dezvoltarii medicii pot observa deja problemele de crestere a maxilarului si a dintilor permanenti. Unele probleme de ortodontie sunt mai usor de corectat daca sunt descoperite din timp.</p>
+        <div> <h3 class="pt-2">8. Ce este un implant dentar?</h3>
+            <p>Exista mai multe optiuni pentru rezolvarea acestei probleme. Puntile dentare, protezele, si implantele dentare, acestea din urma fiind preferate in practica moderna datorita nevoii de estetic si de un maxim functional asemanator cu cel al dintilor naturali.</p>
+            <p>In cazul pierderii uneia sau mai multor unitati dentare, va recomandam tratament de urgenta. Dintii vecini pot avansa si ocupa spatiul ramas liber; mai mult absenta unui dinte poate duce la resorbtie osoasa, probleme de igiena, dificultati in vorbire si alimentatie si multe altele.</p> 
+        </div>
+        <div> <h3 class="pt-2">9. Ce este un implant dentar?</h3>
+        <p>Un implant dentar este un mic surub care inlocuieste radacina dintelui natural. Surubul se insera in osul alveolar sub anestezie locala si apoi este lasat pe loc pentru a se integra o perioada de timp de aproximativ 2-6 luni; perioada ce difera de la un pacient la altul in functie de de densitatea osoasa a fiecaruia. </p>
+        <p>Cand integrarea s-a realizat, deasupra surubului se conecteaza un dinte artificial. Implantele dentare reprezinta solutia cea mai buna de inlocuire a dintilor lipsa. Implantele dentare pot inlocui unul sau mai multi dinti lipsa. In cazul pacientilor edentati total, implantele se pot utiliza pentru a fixa proteze fixe sau protezele mobile de osul subiacent.</p> 
+        </div>
+        <h3 class="pt-2">10. Doare implantul dentar?</h3>
+        <p>Nu, pentru ca se realizeaza sub anestezie locala. Regiunea in care s-a intervenit poate fi usor tumefiata cateva zile dupa, iar durerile de intensitate redusa care ar putea sa apara se remit de cele mai multe ori cu antialgice usoare.</p>
+              </main>
+
+        <aside class="col-4 ps-5">
+          <img class="pt-4 pb-6" src="myapp/img/intreb1.jpg" alt="Lipseste poza!">
+          <img class="pt-6" src="myapp/img/intreb3.jpg" alt="Lipseste poza!">
+            </aside>
+          </div>
+            </div>
+
+        <footer class="mt-2">
+            <div class="container-fluid bg-dark text-white d-flex justify-content-around pt-2">
+                <div class="col-2" > 
+                           <p>Viata e scurta! </p>
+                           <p>Zambeste cat inca mai ai dinti!</p>
+                </div>
+                <div class="col-2" >   
+                  <p>Contact</p>
+                  <p>Virdol Nicusor Adrian</p>
+                  <p>virdolnicusor@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
